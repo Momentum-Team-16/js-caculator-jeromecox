@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background-color: white;
+}
+
+#main {
+  min-height: 90vh;
+  margin: 2%;
+  background-color: #cfe9d2;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  align-items: space-between;
+  font-size: 10vh;
+  gap: 2px;
+}
+
+.non-arith {
+  color: white;
+  background-color: #40cf4d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1%;
+}
+
+.arith {
+  background-color: #88ce8e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1%;
+}
+
+#result {
+  color: white;
+  background-color: #40cf4d;
+  grid-column: 2 / span 3;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 2%;
+}
+
+.arith:hover {
+  background-color: #cfe9d2;
+}
+
+.non-arith:hover {
+  background-color: #cfe9d2;
+}
