@@ -7,33 +7,47 @@
 body {
   min-height: 100vh;
   background-color: white;
-  border: 5px solid orange;
 }
 
 #main {
   min-height: 90vh;
   margin: 2%;
   background-color: #cfe9d2;
-  border: 5px solid purple;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, 1fr);
+  align-items: space-between;
+  font-size: 10vh;
   gap: 2px;
 }
 
 .non-arith {
   color: white;
   background-color: #40cf4d;
-  place-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1%;
 }
+
 .arith {
   background-color: #88ce8e;
-  place-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1%;
 }
 
 #result {
   color: white;
   background-color: #40cf4d;
-  justify-self: end;
   grid-column: 2 / span 3;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 2%;
+}
+
+.button:hover {
+  background-color: #cfe9d2;
 }
