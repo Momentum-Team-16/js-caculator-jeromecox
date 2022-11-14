@@ -16,5 +16,8 @@ clear.addEventListener("click", function (event) {
 
 equal.addEventListener("click", function (event) {
   // doing this now to make EQUAL click not display equal character
-  display.innerText = "different";
+  let equation = display.innerText;
+  let answer = eval(equation);
+  display.innerText = "";
+  display.innerText = answer;
 });
