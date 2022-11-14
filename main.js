@@ -9,15 +9,10 @@ for (let button of buttons) {
   });
 }
 
-// clear button works
 clear.addEventListener("click", function (event) {
   display.innerText = "";
 });
 
 equal.addEventListener("click", function (event) {
-  // doing this now to make EQUAL click not display equal character
-  let equation = display.innerText;
-  let answer = eval(equation);
-  display.innerText = "";
-  display.innerText = answer;
+  display.innerText = eval(display.innerText);
 });
